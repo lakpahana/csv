@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+ 
+    <script src="call.js"></script>
+    
+    <script>
+        document.getElementById("ide").value = "Value";
+    </script>
+
+    <title>Customer Data</title>
+  </head>
+  <body>
+      <br>
+      <br>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col">
+            
+            <input type="file" id="fileUpload" />
+            <input type="button" id="upload" class="btn btn-primary" value="Upload" onclick="Upload()" >
+            </div>
+            <div class="col">
+                <button id="loadnext" class="btn btn-success" onclick="loadnext()">Load Next Data</button>
+                
+                  
+                  Remaining Data :
+                  <input id="remaining">
+                
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+       
+          <div class="col">
+            <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">ID</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="ide">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">First Name</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Last Name</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="lname">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Phone</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="phone">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Address</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">City</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="city">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">State</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="state">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Country</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="country">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Zip</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="zip">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Age</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="age">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Birth MonthS</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="Birth">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Income</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="income">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">HomeOwner</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="howner">
+                </div>
+              </div>
+             
+
+          </div>
+          <div class="col">
+           
+            
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Married</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="married">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Property</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="prop">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">NetWorth</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="netw">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">HouseHold</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="hhold">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Credit Rating</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="Credit">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Dwelling Type</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="dwle">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Political Donor</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="polt">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Ethnity</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="eth">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Language Spoken</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="lang">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="mail">
+                </div>
+              </div>
+            
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Lat</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="lat">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Lng</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="lng">
+                </div>
+              </div>
+
+
+
+
+          </div>
+        
+        </div>
+        <br>
+        <br>
+           <div>
+            
+            <script src="call.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
